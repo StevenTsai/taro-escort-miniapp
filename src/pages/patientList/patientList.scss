@@ -1,0 +1,156 @@
+.patient-list-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 20rpx;
+
+  .patient-scroll {
+    height: calc(100vh - 44px);
+  }
+
+  .patient-list {
+    margin-top: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+
+    .taro-cell {
+      padding: 24rpx 30rpx;
+      border-radius: 12rpx;
+      font-size: 28rpx;
+      color: #333;
+      background-color: #ffffff;
+      box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+      border: none;
+      margin-bottom: 0;
+      position: relative;
+      overflow: hidden;
+      animation: cardFadeIn 0.5s ease forwards;
+      opacity: 0;
+      transform: translateY(20rpx);
+
+      // 点击效果
+      &:active {
+        transform: scale(0.98);
+      }
+
+      // 悬停效果
+      &:hover {
+        transform: translateY(-2rpx);
+        box-shadow: 0 4rpx 20rpx rgba(24, 144, 255, 0.2);
+      }
+
+      .patient-name {
+        font-weight: bold;
+        color: #333 !important;
+        margin-right: 30rpx !important;
+      }
+
+      .patient-age,
+      .patient-gender {
+        font-size: 26rpx !important;
+        color: #666 !important;
+      }
+
+      .patient-actions {
+        display: flex;
+        align-items: center;
+      }
+
+      .delete-btn {
+        color: #ffffff !important;
+        background-color: #ff4d4f !important;
+        font-size: 24rpx !important;
+        padding: 8rpx 24rpx !important;
+        border-radius: 20rpx !important;
+        transition: all 0.2s ease;
+
+        &:active {
+          transform: scale(0.95);
+          background-color: #d9363e !important;
+        }
+      }
+    }
+  }
+
+  .loading {
+    text-align: center;
+    padding: 40rpx;
+    font-size: 26rpx;
+    color: #999;
+  }
+
+  /* Add patient button */
+  .add-patient-btn-container {
+    position: fixed;
+    bottom: 140rpx;
+    right: 40rpx;
+    z-index: 999;
+  }
+
+  .add-patient-btn {
+    width: 80rpx;
+    height: 80rpx;
+    background-color: #1890ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4rpx 12rpx rgba(24, 144, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #40a9ff;
+      transform: scale(1.1);
+    }
+
+    &:active {
+      background-color: #096dd9;
+      transform: scale(0.9);
+    }
+  }
+
+  .add-btn-text {
+    font-size: 48rpx;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+/* 功能说明样式 */
+.function-tip {
+  position: fixed;
+  bottom: 120rpx; /* 增加底部距离，避免被导航栏遮挡 */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.9); /* 增加背景不透明度，使文字更清晰 */
+  color: #ffffff;
+  padding: 20rpx 28rpx; /* 增加内边距，使文字更舒适 */
+  border-radius: 24rpx;
+  font-size: 26rpx; /* 增加字体大小，使文字更清晰 */
+  text-align: center;
+  max-width: 85%; /* 增加最大宽度，显示更多文字 */
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.4); /* 增加阴影效果，提升视觉层次感 */
+  z-index: 999; /* 确保显示在最上层 */
+
+  .tip-text {
+    line-height: 1.5;
+    font-weight: 500; /* 增加字体权重，使文字更清晰 */
+  }
+}
+
+// 动画：卡片渐入
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20rpx);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

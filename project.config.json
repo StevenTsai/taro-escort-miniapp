@@ -1,0 +1,35 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "medical-chaperon-miniapp",
+	"description": "",
+	"appid": "wx6b85fc4a7efc7c05",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+    "enhance": false,
+    "compileHotReLoad": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"useCompilerModule": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {}
+}

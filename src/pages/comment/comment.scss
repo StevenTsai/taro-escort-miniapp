@@ -1,0 +1,135 @@
+.comment-page {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+
+  .order-info {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    .order-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .order-detail {
+      font-size: 14px;
+      color: #666;
+      line-height: 20px;
+
+      .detail-item {
+        margin-bottom: 8px;
+      }
+
+      .label {
+        color: #999;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .rating-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .rating-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .rating-stars {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  .comment-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .comment-input {
+      .nut-textarea {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 14px;
+
+        &:focus {
+          border-color: #4caf50;
+          box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+        }
+      }
+
+      .nut-textarea__footer {
+        padding-top: 8px;
+        font-size: 12px;
+        color: #999;
+        text-align: right;
+      }
+    }
+  }
+
+  .submit-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: 52px;
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    border-radius: 26px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+
+    &:not(:disabled) {
+      &:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+        background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+      }
+    }
+
+    &:disabled {
+      background: #a5d6a7;
+      color: #e8f5e8;
+      box-shadow: none;
+    }
+
+    &.nut-button--loading {
+      background: #81c784;
+      box-shadow: 0 2px 8px rgba(129, 199, 132, 0.3);
+    }
+  }
+}

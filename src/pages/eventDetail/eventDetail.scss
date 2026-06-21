@@ -1,0 +1,450 @@
+// 事件详情页面样式
+
+// 基础样式重置
+.event-detail-container {
+  padding: 16px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 16px;
+  color: #666666;
+}
+
+// 事件基本信息
+.event-basic-info {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.event-type-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 12px;
+  color: #ffffff;
+}
+
+.event-title-section {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.key-node-tag {
+  display: inline-block;
+  background-color: #faad14;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.event-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.event-type-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.event-date {
+  font-size: 14px;
+  color: #999999;
+}
+
+// 通用章节样式
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 12px;
+  display: block;
+}
+
+// 事件详细内容
+.event-content-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.content-body {
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.content-text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+// 用药记录
+.medications-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+// 用药记录分隔线
+.medication-divider {
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.medications-list {
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.medication-item {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.medication-item:last-child {
+  margin-bottom: 0;
+}
+
+.medication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.drug-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.dosage {
+  font-size: 14px;
+  color: #666666;
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.medication-body {
+  margin-bottom: 12px;
+}
+
+.usage {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.medication-footer {
+  text-align: right;
+}
+
+.medication-date {
+  font-size: 12px;
+  color: #999999;
+}
+
+// 附件列表
+.attachments-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.attachments-list {
+  padding: 0;
+}
+
+.attachment-item {
+  margin-bottom: 12px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+.attachment-item:last-child {
+  margin-bottom: 0;
+}
+
+.attachment-info {
+  padding: 12px;
+}
+
+.attachment-name {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.attachment-size {
+  font-size: 12px;
+  color: #999999;
+}
+
+.image-preview {
+  width: 100%;
+  cursor: pointer;
+}
+
+.attachment-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.image-preview .attachment-name {
+  padding: 8px 12px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 13px;
+}
+
+// 图片水平滚动容器
+.image-scroll-container {
+  margin: 12px 0;
+  white-space: nowrap;
+}
+
+.image-scroll-list {
+  display: inline-flex;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.image-scroll-item {
+  display: inline-block;
+  width: 120px;
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+.image-scroll-item .image-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.image-scroll-item .attachment-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-scroll-item .image-name {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+// 非图片附件容器
+.non-image-attachments {
+  margin-top: 12px;
+}
+
+.download-btn {
+  height: 32px;
+  font-size: 12px;
+  color: #1890ff;
+  background-color: transparent;
+  border: 1px solid #1890ff;
+  border-radius: 16px;
+  padding: 0 12px;
+}
+
+// 操作按钮
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.edit-btn {
+  flex: 1;
+  height: 40px;
+  font-size: 16px;
+  color: #1890ff;
+  background-color: transparent;
+  border: 1px solid #1890ff;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  flex: 1;
+  height: 40px;
+  font-size: 16px;
+  color: #ff4d4f;
+  background-color: transparent;
+  border: 1px solid #ff4d4f;
+  border-radius: 4px;
+}
+
+// 治疗小结样式
+.treatment-info-item {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+// 检查事件样式
+.inspection-info-item {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 500;
+  width: 80px;
+  flex-shrink: 0;
+  line-height: 1.6;
+}
+
+.info-value {
+  font-size: 14px;
+  color: #333333;
+  flex: 1;
+  line-height: 1.6;
+}
+
+.info-value.multi-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 2em;
+}
+
+.treatment-info-item:last-child,
+.inspection-info-item:last-child {
+  margin-bottom: 0;
+}
+
+// 响应式设计
+@media (min-width: 768px) {
+  .event-detail-container {
+    padding: 24px;
+  }
+  
+  .event-basic-info,
+  .event-content-section,
+  .medications-section,
+  .attachments-section,
+  .action-buttons {
+    padding: 24px;
+  }
+  
+  .event-title {
+    font-size: 20px;
+  }
+  
+  .content-text {
+    font-size: 15px;
+  }
+  
+  .info-label {
+    width: 90px;
+    font-size: 15px;
+  }
+  
+  .info-value {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .event-detail-container {
+    padding: 12px;
+  }
+  
+  .event-basic-info,
+  .event-content-section,
+  .medications-section,
+  .attachments-section,
+  .action-buttons {
+    padding: 16px;
+  }
+  
+  .event-title {
+    font-size: 17px;
+  }
+  
+  .content-text {
+    font-size: 13px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    width: 100%;
+  }
+  
+  .info-label {
+    width: 70px;
+    font-size: 13px;
+  }
+  
+  .info-value {
+    font-size: 13px;
+  }
+}

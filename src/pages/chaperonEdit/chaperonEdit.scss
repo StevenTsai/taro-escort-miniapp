@@ -1,0 +1,145 @@
+.chaperon-edit-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 100px; // 为底部按钮留出空间
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-form {
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.avatar-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.avatar-label {
+  width: 60px;
+  font-size: 14px;
+  color: #333;
+  margin-right: 20px;
+}
+
+.avatar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.avatar {
+  margin-bottom: 10px;
+  border-radius: 40px;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.avatar-btn {
+  margin-top: 5px;
+}
+
+.edit-input {
+  width: 100%;
+  text-align: right;
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  resize: none;
+}
+
+.edit-textarea::placeholder {
+  color: #999;
+}
+
+/* 标签选择样式 */
+.tag-section {
+  width: 100%;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tag-item {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #d9d9d9;
+}
+
+.tag-item.selected {
+  background: #1989fa;
+  color: #fff;
+  border-color: #1989fa;
+}
+
+.selected-tags-text {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+/* 底部提交按钮样式 */
+.bottom-submit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 16px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  z-index: 100;
+}
+
+.bottom-submit .nut-button {
+  height: 44px;
+  font-size: 16px;
+}

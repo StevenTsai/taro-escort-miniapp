@@ -1,0 +1,214 @@
+.create-patient-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.scroll-view {
+  height: 100vh;
+}
+
+.form-container {
+  padding: 16px;
+}
+
+.form-section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.form-item {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333333;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+  }
+
+  &.error {
+    border-color: #ff4d4f;
+  }
+}
+
+.error-text {
+  display: block;
+  font-size: 12px;
+  color: #ff4d4f;
+  margin-top: 4px;
+  margin-left: 0;
+}
+
+/* 性别选择器 */
+.gender-selector {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s;
+
+  &.selected {
+    background-color: rgba(24, 144, 255, 0.1);
+  }
+}
+
+.gender-text {
+  font-size: 15px;
+  color: #333333;
+}
+
+.gender-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s;
+
+  &.checked {
+    border-color: #1890ff;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      background-color: #1890ff;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* 富文本编辑器 */
+.rich-text-editor {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.history-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 8px;
+  font-size: 14px;
+  color: #333333;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* 表单操作区域 */
+.form-actions {
+  margin-top: 32px;
+  padding: 0 16px;
+  padding-bottom: 32px;
+}
+
+.save-btn {
+  width: 100%;
+  height: 44px;
+  background-color: #1890ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #40a9ff;
+  }
+
+  &:active {
+    background-color: #096dd9;
+  }
+}
+
+/* 治疗方案容器 */
+.treatment-container {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.treatment-container.error {
+  border-color: #ff4d4f;
+}
+
+/* 治疗方案文本域 */
+.treatment-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  background-color: #ffffff;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* 字数统计 */
+.word-count {
+  padding: 0 12px 12px;
+  text-align: right;
+  font-size: 12px;
+  color: #999999;
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+  .form-container {
+    padding: 32px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

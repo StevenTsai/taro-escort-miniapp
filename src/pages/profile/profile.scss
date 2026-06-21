@@ -1,0 +1,45 @@
+.profile-page {
+  padding-bottom: 100px;
+  .profile {
+    background: #29bd3c;
+    height: 150px;
+    width: 90vw;
+    margin: 80px auto 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    .avatar {
+      position: relative;
+      top: -70px;
+    }
+    .name {
+      position: relative;
+      top: -40px;
+      color: #fff;
+      font-weight: bold;
+    }
+    &.profile-medical-chaperon {
+      background: #0073ff;
+    }
+  }
+
+  .function-list {
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: var(--nutui-cell-box-shadow, 0 1px 7px 0 #edeef1);
+    border-radius: var(--nutui-cell-border-radius, 6px);
+  }
+
+  .sticky-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+    background: #fff;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}

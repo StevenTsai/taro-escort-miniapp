@@ -1,0 +1,116 @@
+{
+  "extends": [
+    "taro/react",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "import",
+    "react-hooks"
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@",
+            "./src"
+          ]
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".json"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true
+      }
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-unused-modules": [
+      "warn",
+      {
+        "unusedExports": true
+      }
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [
+          "^@tarojs/",
+          "^@nutui/"
+        ]
+      }
+    ],
+    "import/named": "error",
+    "import/default": "error",
+    "import/namespace": "error",
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/pages/**/*.{js,jsx}",
+        "src/app.js",
+        "src/app.config.js",
+        "src/components/**/*.{js,jsx}",
+        "src/store/**/*.{js,jsx}",
+        "src/utils/**/*.{js,jsx}",
+        "config/**/*.js",
+        "src/custom-tab-bar/**/*.jsx"
+      ],
+      "rules": {
+        "import/no-unused-modules": "off"
+      }
+    }
+  ],
+  "globals": {
+    "defineAppConfig": "readonly",
+    "definePageConfig": "readonly"
+  }
+}

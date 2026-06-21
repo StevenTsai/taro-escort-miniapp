@@ -1,0 +1,88 @@
+.hospital-card {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+  .hospital-card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .hospital-card-info {
+    // width: 100%;
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 100px;
+    gap: 5px;
+  }
+
+  .name {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .location {
+    color: #999;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .body {
+    padding: 0;
+
+    .tag {
+      margin-right: 10px;
+    }
+  }
+
+  .bottom {
+    padding: 0;
+  }
+}
+
+.hospital-list {
+  width: 95vw;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 80px;
+  --nutui-searchbar-background: #fff;
+  --nutui-searchbar-content-background: #fff;
+  --nutui-searchbar-input-curror-color: #000;
+  margin: 10px auto;
+  .nut-searchbar-icon {
+    color: green;
+  }
+  .nut-searchbar-content {
+    border-color: green;
+  }
+  .nut-cell-group-title {
+    background: #fff;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .hospital-list-title {
+    font-weight: bold;
+    color: green;
+  }
+  .nut-cell-group-wrap {
+    margin-top: 0;
+  }
+  .skeleton-cell {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+}

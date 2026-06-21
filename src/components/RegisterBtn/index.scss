@@ -1,0 +1,28 @@
+.cmp-register-btn {
+  width: 90vw;
+  margin: 20px auto;
+  background: #6495ed;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+  .cmp-register-btn-title {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  .cmp-register-btn-sub-title {
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    color: #ebebeb;
+  }
+  .cmp-register-btn-icon {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+}

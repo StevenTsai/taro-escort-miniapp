@@ -1,0 +1,73 @@
+.order-card {
+  width: 90vw;
+  margin: 10px auto;
+  // height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  .order-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .order-status {
+      border-radius: 50px;
+    }
+  }
+  .order-medical-chaperon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    .order-medical-chaperon-left {
+      width: 40px;
+      height: 40px;
+    }
+    .order-medical-chaperon-right {
+      display: flex;
+      flex-flow: column;
+      gap: 5px;
+      flex: 1;
+      .order-medical-chaperon-right-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #999;
+      }
+      .order-medical-chaperon-right-datetime {
+        font-size: 12px;
+        color: #999;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+    .order-medical-chaperon-right-price {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .order-medical-chaperon-right-price-symbol {
+      font-size: 12px;
+    }
+  }
+  .order-info {
+    font-size: 12px;
+    color: #999;
+    .nut-col {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.refund-amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f89d00;
+}
+.refund-reason {
+  font-size: 12px;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.chaperon-list-page {
+  .nut-tabpane {
+    padding: 0;
+    background: transparent;
+  }
+
+  // 占位符样式
+  .loading-placeholder,
+  .error-placeholder,
+  .empty-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+  }
+
+  .error-placeholder {
+    color: #ff4757;
+  }
+
+  .loading-placeholder {
+    color: #666;
+  }
+}

@@ -1,0 +1,63 @@
+.datetime-picker-cell {
+  &.nut-cell {
+    padding: 14px 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #f0f0f0;
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+
+    &.disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+
+  .nut-cell__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .selected {
+    color: #1890ff;
+    font-weight: 500;
+  }
+
+  .placeholder {
+    color: #c8c9cc;
+  }
+}
+
+.datetime-picker-popup {
+  .nut-picker__list {
+    .nut-picker-roller {
+      .nut-picker-roller-item {
+        font-size: 14px;
+        line-height: 36px;
+        padding: 0 12px;
+
+        &.nut-picker-roller-item-active {
+          color: #1890ff;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .nut-picker__toolbar {
+    .nut-picker__cancel,
+    .nut-picker__confirm {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .nut-picker__title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #323233;
+    }
+  }
+}

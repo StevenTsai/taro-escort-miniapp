@@ -1,0 +1,317 @@
+.register-container {
+  background: #f5f5f5;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.register-header {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.register-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.progress-container {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #e8e8e8;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #1989fa;
+  transition: width 0.3s ease;
+}
+
+.step-indicators {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.step-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.step-indicator.active {
+  background: #1989fa;
+  color: #fff;
+}
+
+.step-number {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.step-text {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+.register-form {
+  background: #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+.step-content {
+  margin-bottom: 20px;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+  color: #333;
+}
+
+.picker-input {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #666;
+}
+
+.gender-picker {
+  margin: 0;
+  .nut-cell-group-wrap {
+    margin: 0;
+  }
+}
+
+.gender-picker-cell {
+  &.nut-cell {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nut-cell__title {
+    padding: 0;
+    text-align: left;
+    color: #969799;
+    font-size: 14px;
+    flex: 1;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  &:active {
+    background-color: #f5f5f5;
+  }
+}
+
+.upload-section {
+  margin: 15px 0;
+}
+
+.section-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.avatar-uploader {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.avatar-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  border: 1px dashed #d9d9d9;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-preview image {
+  width: 100%;
+  height: 100%;
+}
+
+.upload-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.id-card-uploader {
+  margin: 15px 0;
+}
+
+/* 为所有输入框添加边框样式 */
+.nut-form .nut-input-wrapper,
+.nut-form .nut-textarea-wrapper {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+/* 调整表单标签和输入框的对齐方式 */
+.nut-form-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-top: 8px;
+}
+
+.nut-form-label {
+  width: 80px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  margin-right: 10px;
+  padding-top: 12px;
+}
+
+.nut-form-control {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 调整输入框内边距，确保文本不贴边框 */
+.nut-form .nut-input {
+  padding: 10px 0;
+}
+
+.nut-form .nut-textarea {
+  padding: 10px 0;
+}
+
+.upload-subtitle {
+  font-size: 12px;
+  color: #999;
+  margin: 10px 0;
+  display: block;
+}
+
+.id-card-preview-item {
+  width: 100%;
+  height: 180px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.id-card-preview-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tag-item {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #d9d9d9;
+}
+
+.tag-item.selected {
+  background: #1989fa;
+  color: #fff;
+  border-color: #1989fa;
+}
+
+.selected-tags-text {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+  display: block;
+}
+
+.introduction-textarea {
+  min-height: 200px;
+  padding: 12px 10px;
+  line-height: 1.6;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.step-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.nav-button {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.prev-button {
+  background: #fff;
+  color: #666;
+  border: 1px solid #d9d9d9;
+}
+
+.next-button {
+  background: #1989fa;
+  color: #fff;
+}
+
+.no-tags {
+  color: #999;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}

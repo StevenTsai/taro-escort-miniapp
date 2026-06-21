@@ -1,0 +1,45 @@
+# 依赖和构建产物
+node_modules/
+dist/
+build/
+
+# Taro 构建产物
+.temp/
+.rn_temp/
+
+# 配置文件
+*.config.js
+project.*.json
+babel.config.js
+
+# 锁定文件
+yarn.lock
+package-lock.json
+
+# 日志文件
+*.log
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 图片和静态资源
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# 其他
+.DS_Store
+.env*
+.eslintrc

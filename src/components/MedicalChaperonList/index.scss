@@ -1,0 +1,95 @@
+.medical-chaperon-card {
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  padding: 10px 15px;
+
+  .avatar-container {
+    .nut-image {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .name {
+    color: #333;
+    font-size: 14px;
+  }
+
+  .location {
+    color: #999;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .body {
+    padding: 0;
+  }
+
+  .bottom {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tag {
+      margin: 5px 10px 5px 0;
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  .bio-text {
+    color: #999999;
+  }
+
+  .tags-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .btn-booking {
+    border-radius: 30px;
+  }
+}
+
+.medical-chaperon-list {
+  width: 90vw;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  .nut-cell-group {
+    border-radius: 10px;
+  }
+  .cell-list {
+    box-shadow: none;
+    padding: 0;
+  }
+  .cell-title {
+    font-size: 18px;
+    color: #117b32;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  .cell-city {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 20px;
+  }
+  .medical-chaperon-list-empty {
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+  }
+}

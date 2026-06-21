@@ -1,0 +1,83 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景和标题 -->
+  <rect width="1200" height="800" fill="#f5f7fa" rx="8"/>
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">一站式外呼解决方案 - 业务架构图</text>
+  
+  <!-- 租户业务域 -->
+  <rect x="100" y="120" width="350" height="500" rx="8" fill="#e6f7ff" stroke="#1890ff" stroke-width="2"/>
+  <text x="275" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1890ff">租户业务域</text>
+  
+  <!-- 租户业务域模块 -->
+  <rect x="130" y="200" width="300" height="70" rx="4" fill="#bae7ff" stroke="#1890ff" stroke-width="1"/>
+  <text x="280" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#1890ff">• 多租户配置管理</text>
+  <text x="280" y="250" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">租户独立配置、平台集中管控</text>
+  
+  <rect x="130" y="290" width="300" height="70" rx="4" fill="#bae7ff" stroke="#1890ff" stroke-width="1"/>
+  <text x="280" y="320" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#1890ff">• 坐席管理</text>
+  <text x="280" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">租户自主管理坐席、权限配置</text>
+  
+  <rect x="130" y="380" width="300" height="70" rx="4" fill="#bae7ff" stroke="#1890ff" stroke-width="1"/>
+  <text x="280" y="410" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#1890ff">• 业务数据管理</text>
+  <text x="280" y="430" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">数据导入、客户信息管理</text>
+  
+  <rect x="130" y="470" width="300" height="70" rx="4" fill="#bae7ff" stroke="#1890ff" stroke-width="1"/>
+  <text x="280" y="500" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#1890ff">• 外呼报表分析</text>
+  <text x="280" y="520" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">租户级报表、数据可视化</text>
+  
+  <!-- 外呼核心业务域 -->
+  <rect x="550" y="120" width="350" height="500" rx="8" fill="#f6ffed" stroke="#52c41a" stroke-width="2"/>
+  <text x="725" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#52c41a">外呼核心业务域</text>
+  
+  <!-- 外呼核心业务域模块 -->
+  <rect x="580" y="200" width="300" height="70" rx="4" fill="#d9f7be" stroke="#52c41a" stroke-width="1"/>
+  <text x="730" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#52c41a">• 话术管理</text>
+  <text x="730" y="250" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">话术模板配置、多场景话术</text>
+  
+  <rect x="580" y="290" width="300" height="70" rx="4" fill="#d9f7be" stroke="#52c41a" stroke-width="1"/>
+  <text x="730" y="320" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#52c41a">• 外呼调度</text>
+  <text x="730" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">批量外呼、手动外呼、智能调度</text>
+  
+  <rect x="580" y="380" width="300" height="70" rx="4" fill="#d9f7be" stroke="#52c41a" stroke-width="1"/>
+  <text x="730" y="410" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#52c41a">• 通话管控</text>
+  <text x="730" y="430" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">通话监控、质量控制、异常处理</text>
+  
+  <rect x="580" y="470" width="300" height="70" rx="4" fill="#d9f7be" stroke="#52c41a" stroke-width="1"/>
+  <text x="730" y="500" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#52c41a">• 投诉处理</text>
+  <text x="730" y="520" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">投诉记录、处理流程、风险预警</text>
+  
+  <!-- 安全与合规业务域 -->
+  <rect x="950" y="120" width="350" height="500" rx="8" fill="#fff7e6" stroke="#fa8c16" stroke-width="2"/>
+  <text x="1125" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#fa8c16">安全与合规业务域</text>
+  
+  <!-- 安全与合规业务域模块 -->
+  <rect x="980" y="200" width="300" height="70" rx="4" fill="#ffd591" stroke="#fa8c16" stroke-width="1"/>
+  <text x="1130" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#fa8c16">• 灰产安防</text>
+  <text x="1130" y="250" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">灰产拦截、防盗打、风险识别</text>
+  
+  <rect x="980" y="290" width="300" height="70" rx="4" fill="#ffd591" stroke="#fa8c16" stroke-width="1"/>
+  <text x="1130" y="320" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#fa8c16">• 外呼安全</text>
+  <text x="1130" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">防骚扰、号码合规、安全认证</text>
+  
+  <rect x="980" y="380" width="300" height="70" rx="4" fill="#ffd591" stroke="#fa8c16" stroke-width="1"/>
+  <text x="1130" y="410" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#fa8c16">• 合规审计</text>
+  <text x="1130" y="430" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">日志审计、合规校验、监管对接</text>
+  
+  <rect x="980" y="470" width="300" height="70" rx="4" fill="#ffd591" stroke="#fa8c16" stroke-width="1"/>
+  <text x="1130" y="500" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#fa8c16">• 运营商对接</text>
+  <text x="1130" y="520" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#666">三大运营商合规管控对接</text>
+  
+  <!-- 业务流程关系箭头 -->
+  <path d="M450 370 L550 370" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="550,370 540,365 540,375" fill="#999"/>
+  
+  <path d="M900 370 L950 370" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="950,370 940,365 940,375" fill="#999"/>
+  
+  <path d="M275 620 L275 650 L725 650 L725 620" stroke="#999" stroke-width="2"/>
+  <polygon points="725,620 715,615 715,625" fill="#999"/>
+  
+  <!-- 业务关系说明 -->
+  <text x="600" y="700" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">业务关系说明</text>
+  <text x="600" y="730" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">租户业务域提供坐席和数据 → 外呼核心业务域执行外呼流程 → 安全与合规业务域保障全流程安全合规</text>
+  <text x="600" y="760" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">平台职责：提供技术支撑、业务流程管控、安全合规保障 | 客户职责：提供业务数据、配置话术、安排坐席</text>
+</svg>

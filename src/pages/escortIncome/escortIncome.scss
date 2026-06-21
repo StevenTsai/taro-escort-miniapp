@@ -1,0 +1,350 @@
+.escort-income-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 页面标题和月份选择 */
+.escort-income-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 10px 0;
+}
+
+.escort-income-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.month-picker-value {
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 收入概览 */
+.income-overview {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.overview-item {
+  flex: 1;
+  text-align: center;
+}
+
+.overview-item:first-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.overview-item:last-child {
+  border-left: 1px solid #e8e8e8;
+}
+
+.overview-label {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.overview-value {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.total-amount {
+  color: #ff6b6b;
+}
+
+.received-amount {
+  color: #4ecdc4;
+}
+
+.pending-amount {
+  color: #ffd166;
+}
+
+.overview-divider {
+  width: 1px;
+  background-color: #e8e8e8;
+  margin: 0 20px;
+}
+
+/* 筛选条件 */
+.filter-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-label {
+  font-size: 16px;
+  color: #333;
+  margin-right: 15px;
+}
+
+.status-picker {
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.status-picker-value {
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.status-picker-value:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 收入明细 */
+.income-details-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 300px);
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.details-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status-filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.status-filter-container .filter-label {
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.details-list {
+  margin-bottom: 24px;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.detail-item-content {
+  padding: 15px;
+}
+
+.detail-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail-order-id {
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-status {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.status-received {
+  background-color: #e6f7f5;
+  color: #4ecdc4;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #ffd166;
+}
+
+.detail-item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-service-type {
+  flex: 1;
+  text-align: left;
+}
+
+.detail-hospital {
+  flex: 1;
+  text-align: right;
+}
+
+.detail-service-date {
+  flex: 1;
+  text-align: left;
+}
+
+.detail-received-time {
+  flex: 1;
+  text-align: right;
+}
+
+.detail-transaction-no {
+  flex: 1;
+  text-align: right;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.detail-patient-name {
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+/* 空状态 */
+.empty-details {
+  margin: 40px 0;
+}
+
+/* 加载更多 */
+.loading-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: #999;
+}
+
+.loading-more text {
+  margin-left: 8px;
+}
+
+/* 没有更多数据 */
+.no-more {
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .escort-income-container {
+    padding: 10px;
+  }
+
+  .escort-income-title {
+    font-size: 20px;
+  }
+
+  .income-overview {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .overview-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .overview-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .overview-divider {
+    display: none;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-label {
+    margin-bottom: 10px;
+  }
+
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status-filter-container {
+    margin-top: 10px;
+  }
+
+  .detail-item-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail-hospital,
+  .detail-received-time {
+    text-align: left;
+    margin-top: 5px;
+  }
+}

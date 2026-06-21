@@ -1,0 +1,161 @@
+.order-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding-bottom: 120px;
+
+  // 服务信息卡片
+  .service-card {
+    display: flex;
+    overflow: hidden;
+    margin: 10px 20px;
+    .service-image {
+      width: 120px;
+      height: 90px;
+      flex-shrink: 0;
+    }
+
+    .service-info {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .service-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+      }
+
+      .service-price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4caf50;
+      }
+    }
+  }
+
+  // 服务类型选择
+  .service-types {
+    display: flex;
+    gap: 12px;
+    margin: 0 20px 20px;
+    background: #fff;
+    box-shadow: var(--nutui-cell-box-shadow, 0 1px 7px 0 #edeef1);
+    border-radius: 30px;
+    padding: 5px;
+
+    .service-btn {
+      flex: 1;
+      // height: 44px;
+      background: #fff;
+      color: #666;
+      border: 0;
+      border-radius: 22px;
+      font-size: 14px;
+      color: #4caf50;
+
+      &.active {
+        background: #4caf50;
+        color: #fff;
+        border-color: #4caf50;
+      }
+    }
+  }
+
+  .booking-form-container {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    .nut-cell-group-wrap {
+      background: transparent;
+    }
+
+    // 表单样式
+    .booking-form {
+      margin-bottom: 10px;
+      box-shadow: var(--nutui-cell-box-shadow, 0 1px 7px 0 #edeef1);
+      background: #fff;
+      .nut-form-item-labeltxt {
+        color: #4caf50;
+      }
+    }
+  }
+
+  .bootom-tips {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+  }
+
+  // 底部信息和支付
+  .bottom-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 16px 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+
+    .contact-tip {
+      display: block;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .contact-phone {
+      display: block;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .agreement {
+      margin-bottom: 16px;
+      color: #666;
+
+      .nut-checkbox {
+        font-size: 12px;
+        color: #666;
+      }
+      .agreement-link {
+        color: #4caf50;
+        cursor: pointer;
+      }
+    }
+
+    .pay-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .price-info {
+        .price {
+          font-size: 24px;
+          font-weight: bold;
+          color: #4caf50;
+        }
+      }
+
+      .pay-btn {
+        flex: 1;
+        height: 48px;
+        background: #4caf50;
+        border-radius: 24px;
+        font-size: 16px;
+        font-weight: bold;
+
+        &.nut-button--loading {
+          background: #81c784;
+        }
+      }
+    }
+  }
+}

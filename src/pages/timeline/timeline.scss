@@ -1,0 +1,366 @@
+// 时间轴页面样式
+
+// 基础样式重置
+.timeline-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  position: relative;
+}
+
+// 筛选栏
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  font-size: 14px;
+  color: #666666;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 16px;
+  padding: 0 12px;
+}
+
+.filter-icon {
+  font-size: 14px;
+}
+
+// 筛选面板
+.filter-panel {
+  background-color: #ffffff;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+}
+
+.filter-item {
+  margin-bottom: 16px;
+}
+
+.filter-label {
+  font-size: 14px;
+  color: #333333;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+// 日期范围选择
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-btn {
+  flex: 1;
+  height: 36px;
+  font-size: 14px;
+  color: #666666;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.date-separator {
+  font-size: 14px;
+  color: #999999;
+}
+
+// 事件类型选择器
+.event-type-selector {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.type-btn {
+  height: 32px;
+  font-size: 13px;
+  color: #666666;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 0 12px;
+}
+
+.type-btn.active {
+  background-color: #1890ff;
+  color: #ffffff;
+  border-color: #1890ff;
+}
+
+// 筛选操作按钮
+.filter-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  flex: 1;
+  height: 36px;
+  font-size: 14px;
+  color: #666666;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.apply-btn {
+  flex: 1;
+  height: 36px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #1890ff;
+  border: none;
+  border-radius: 4px;
+}
+
+// 时间轴滚动区域
+.timeline-scroll {
+  padding: 16px;
+  min-height: calc(100vh - 60px);
+}
+
+// 事件列表
+.events-list {
+  position: relative;
+}
+
+.event-item {
+  display: flex;
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.event-item:last-child {
+  margin-bottom: 0;
+}
+
+// 事件左侧（标记和连接线）
+.event-left {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.event-type-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.event-vertical-line {
+  width: 1px;
+  height: calc(100% + 24px);
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 24px;
+  left: 5.5px;
+}
+
+.event-item:last-child .event-vertical-line {
+  display: none;
+}
+
+// 事件右侧内容
+.event-right {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.event-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.event-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.key-node-tag {
+  background-color: #faad14;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.event-date {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.event-type {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.event-content {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+
+// 附件列表
+.attachments {
+  margin-bottom: 16px;
+}
+
+.attachments-label {
+  font-size: 14px;
+  color: #666666;
+  margin-right: 8px;
+}
+
+.attachments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.attachment-item {
+  font-size: 13px;
+  color: #1890ff;
+  text-decoration: underline;
+}
+
+// 查看详情按钮
+.view-detail-btn {
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+  color: #1890ff;
+  background-color: transparent;
+  border: 1px solid #1890ff;
+  border-radius: 4px;
+}
+
+// 无数据状态
+.no-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.no-data-text {
+  font-size: 14px;
+  color: #999999;
+}
+
+// 加载更多提示
+.loading-more, .no-more {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #999999;
+}
+
+// 添加事件按钮
+.add-event-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #1890ff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+// 响应式设计
+@media (min-width: 768px) {
+  .timeline-scroll {
+    padding: 24px;
+  }
+  
+  .filter-bar {
+    padding: 16px 24px;
+  }
+  
+  .filter-panel {
+    padding: 24px;
+  }
+  
+  .event-right {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .timeline-scroll {
+    padding: 12px;
+  }
+  
+  .filter-bar {
+    padding: 12px;
+  }
+  
+  .filter-panel {
+    padding: 12px;
+  }
+  
+  .event-right {
+    padding: 12px;
+  }
+  
+  .event-title {
+    font-size: 15px;
+  }
+  
+  .event-content {
+    font-size: 13px;
+  }
+  
+  .add-event-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

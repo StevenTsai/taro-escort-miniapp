@@ -1,0 +1,72 @@
+.service-component {
+  width: 95vw;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px auto;
+  .service-title {
+    background: #008000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    text {
+      margin: 0 10px;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .service-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    .btn-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      flex-flow: column;
+      .title {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      .desc {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+    .btn-divider {
+      width: 1px;
+      height: 120px;
+      background: #e5e5e5;
+      margin: 0 10px;
+    }
+  }
+  .service-list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    .service-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      flex-flow: column;
+      text {
+        font-size: 12px;
+        padding: 5px 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
