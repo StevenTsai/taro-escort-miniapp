@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "medical-chaperon-miniapp",
 	"description": "",
-	"appid": "wx6b85fc4a7efc7c05",
+	"appid": "your-appid",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,

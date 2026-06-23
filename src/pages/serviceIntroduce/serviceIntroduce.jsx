@@ -25,12 +25,12 @@ function Index() {
     <View className='service-introduce'>
       <Image
         mode='widthFix'
-        src='https://medical-chaperon-1300583272.cos.ap-guangzhou.myqcloud.com/marquee/WechatIMG1021.jpg'
+        src={`${process.env.TARO_APP_COS_BASE}/marquee/WechatIMG1021.jpg`}
       />
       <ConfigProvider theme={{ nutuiColDefaultMarginBottom: pxTransform(40) }}>
         <View className='section-1'>
           <View className='service-introduce-title'>
-            <Text className='service-introduce-title-text'>壹鹿康行</Text>
+            <Text className='service-introduce-title-text'>本平台</Text>
             <Text className='service-introduce-title-text'>能解决那些问题？</Text>
           </View>
           <View className='service-introduce-content-text'>
@@ -99,11 +99,11 @@ function Index() {
         </View>
         <View className='section-2'>
           <View className='service-introduce-title'>
-            <Text className='service-introduce-title-text'>为什么选壹鹿康行？</Text>
+            <Text className='service-introduce-title-text'>为什么选本平台？</Text>
           </View>
           <View className='service-introduce-content-text'>
             <Text>
-              壹鹿康行专注陪诊服务, 从客户的角度出发, 不断改进完善服务细节, 力求提供最完美的服务。
+              本平台专注陪诊服务, 从客户的角度出发, 不断改进完善服务细节, 力求提供最完美的服务。
             </Text>
           </View>
           <Row type='flex' wrap='wrap'>
@@ -172,7 +172,7 @@ function Index() {
               <View className='section-2-item-content-box'>
                 <Text className='section-2-item-title'>标准专业化服务流程</Text>
                 <Text className='section-2-item-content'>
-                  壹鹿康行专注于陪诊服务拥有一套完善且标准化的陪诊服务流程,
+                  本平台专注于陪诊服务拥有一套完善且标准化的陪诊服务流程,
                   确保每一位患者都能得到高效、专业的服务。
                 </Text>
               </View>
@@ -205,7 +205,7 @@ function Index() {
               <Text>陪诊</Text>
             </View>
             <View className='section-3-item-content-text'>
-              壹鹿康行曾遇到许多就诊人因流程不熟悉、不会选择科室、不清楚检查步骤等问题,
+              本平台曾遇到许多就诊人因流程不熟悉、不会选择科室、不清楚检查步骤等问题,
               浪费大量时间,感到焦虑和无助,甚至影响治疗进程和效果。
             </View>
           </View>

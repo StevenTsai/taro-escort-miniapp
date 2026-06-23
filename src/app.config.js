@@ -14,16 +14,6 @@ export default defineAppConfig({
   'pages/escortIncome/escortIncome',
   'pages/comment/comment',
   'pages/chaperonEdit/chaperonEdit',
-  'pages/patientList/patientList',
-  'pages/patientDetail/patientDetail',
-  'pages/createPatient/createPatient',
-  'pages/timeline/timeline',
-  'pages/eventDetail/eventDetail',
-  'pages/addTreatment/addTreatment',
-  'pages/addMedication/addMedication',
-  'pages/addInspection/addInspection',
-  'pages/addGeneralEvent/addGeneralEvent',
-  'pages/reportGenerate/reportGenerate',
 ],
 
 
@@ -47,10 +37,6 @@ export default defineAppConfig({
     {
       pagePath: 'pages/medicalChaperons/medicalChaperons',
       text: '陪诊师预约'
-    },
-     {
-      pagePath: 'pages/patientList/patientList',
-      text: '患者管理'
     },
     {
       pagePath: 'pages/profile/profile',

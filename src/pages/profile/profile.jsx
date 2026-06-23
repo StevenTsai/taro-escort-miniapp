@@ -131,14 +131,14 @@ function Profile() {
 
   Taro.useShareAppMessage(() => {
     return {
-      title: '壹鹿康行',
+      title: '陪诊服务',
       path: '/pages/index/index',
     };
   });
 
   Taro.useShareTimeline(() => {
     return {
-      title: '壹鹿康行',
+      title: '陪诊服务',
       path: '/pages/index/index',
     };
   });
@@ -234,13 +234,13 @@ function Profile() {
     const tmplIds =
       userInfo?.role !== 2
         ? [
-            'xFXHUxi1wREwX_sHxkWjrhfdvLPSugtfAP5ns4YDj4Q',
-            '-99hwCj_MEggGoBceQQbvRckbPE2mZoIGepk_Y6NPRU',
+            'your-template-id-booking-success',
+            'your-template-id-user-notify',
           ]
         : [
-            'xFXHUxi1wREwX_sHxkWjrhfdvLPSugtfAP5ns4YDj4Q',
-            '23oVo6eA0LXP1VTKrRmztie4LM7mi0m1J-8ZjOf1sXU',
-            '-h75fmq3IWMddNhy2bfP4-Gv4z8eHv5E_aw5K5MeKA0',
+            'your-template-id-booking-success',
+            'your-template-id-chaperon-notify',
+            'your-template-id-service-reminder',
           ];
 
     Taro.requestSubscribeMessage({
@@ -288,7 +288,7 @@ function Profile() {
 
   const goToUsageGuide = () => {
     Taro.downloadFile({
-      url: 'https://medical-chaperon-1300583272.cos.ap-guangzhou.myqcloud.com/file/%E5%B8%8C%E5%B8%8C%E7%88%B8%E9%99%AA%E8%AF%8A-%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95%20%283%29.docx',
+      url: `${process.env.TARO_APP_COS_BASE}/file/usage-guide.docx`,
       success: res => {
         Taro.openDocument({
           filePath: res.tempFilePath,
@@ -300,12 +300,6 @@ function Profile() {
   const goToEscortIncome = () => {
     Taro.navigateTo({
       url: '/pages/escortIncome/escortIncome',
-    });
-  };
-
-  const goToMyPatients = () => {
-    Taro.navigateTo({
-      url: '/pages/patientList/patientList',
     });
   };
 

@@ -41,7 +41,6 @@ const MedicalChaperonList = () => {
           title={
             <Cell
               description={
-                // <CityPicker cellProps={{ style: { boxShadow: 'none' } }} onChange={setCity} />
                 <View className='cell-city'>
                   <Location color='#117b32' />
                   <CityPicker

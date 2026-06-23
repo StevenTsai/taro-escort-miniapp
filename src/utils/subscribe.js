@@ -4,16 +4,16 @@ import Taro from '@tarojs/taro';
  * 微信小程序订阅消息工具类
  */
 
-// 模板ID
+// 模板ID — 请替换为你自己的微信订阅消息模板 ID
 const TEMPLATE_IDS = {
   // 订单状态变更通知
-  ORDER_STATUS_UPDATE: 'Qv1QlPWH47bjPZo1G2fon-g9wUfNFugYJZomnWRspCk',
+  ORDER_STATUS_UPDATE: 'your-template-id-order-status',
   // 服务完成通知
-  SERVICE_COMPLETE: 'Xz3DQ-r_puOP-5MELrJfOgEYT6Y3kHlHnJYicivmLWA',
+  SERVICE_COMPLETE: 'your-template-id-service-complete',
   // 服务即将开始提醒
-  SERVICE_REMINDER: 'xFXHUxi1wREwX_sHxkWjrq5wc6y1pIBOZX2GfyWCd6k',
+  SERVICE_REMINDER: 'your-template-id-service-reminder',
   // 服务预约成功通知
-  SERVICE_BOOKING_SUCCESS: 'xFXHUxi1wREwX_sHxkWjrhfdvLPSugtfAP5ns4YDj4Q',
+  SERVICE_BOOKING_SUCCESS: 'your-template-id-booking-success',
 };
 
 /**

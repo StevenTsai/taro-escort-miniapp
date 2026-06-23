@@ -1,8 +1,20 @@
 {
-	"name": "medical-chaperon-miniapp",
+	"name": "taro-escort-miniapp",
 	"version": "1.0.0",
 	"private": true,
-	"description": "医疗陪诊微信小程序 - 提供陪诊预约、患者管理、课程视频、AI助手等服务",
+	"license": "MIT",
+	"description": "基于 Taro 4 + React 18 的医疗陪诊服务小程序，提供陪诊预约、支付、认证等完整流程",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/StevenTsai/taro-escort-miniapp.git"
+	},
+	"bugs": {
+		"url": "https://github.com/StevenTsai/taro-escort-miniapp/issues"
+	},
+	"homepage": "https://github.com/StevenTsai/taro-escort-miniapp#readme",
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"templateInfo": {
 		"name": "react-NutUI",
 		"typescript": false,
@@ -42,7 +54,7 @@
 		"Android >= 4.1",
 		"ios >= 8"
 	],
-	"author": "Medical Chaperon Team",
+	"author": "Steven",
 	"lint-staged": {
 		"src/**/*.{js,jsx}": [
 			"eslint --fix",

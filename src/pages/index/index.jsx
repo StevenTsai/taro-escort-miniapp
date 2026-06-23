@@ -17,14 +17,14 @@ function Index() {
 
   Taro.useShareAppMessage(() => {
     return {
-      title: '壹鹿康行',
+      title: '陪诊服务',
       path: '/pages/index/index',
     };
   });
 
   Taro.useShareTimeline(() => {
     return {
-      title: '壹鹿康行',
+      title: '陪诊服务',
       path: '/pages/index/index',
     };
   });

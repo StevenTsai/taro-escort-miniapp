@@ -1,7 +1,7 @@
 import { View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 
-import { Cart, User, UserAdd, Wallet } from '@nutui/icons-react-taro';
+import { Cart, User, UserAdd } from '@nutui/icons-react-taro';
 import { Tabbar } from '@nutui/nutui-react-taro';
 import { useEffect } from 'react';
 
@@ -11,7 +11,6 @@ import './index.scss';
 const TAB_PAGES = [
   'pages/index/index',
   'pages/medicalChaperons/medicalChaperons',
-  'pages/patientList/patientList',
   'pages/profile/profile',
 ];
 
@@ -48,7 +47,6 @@ function CustomTabBar() {
       >
         <Tabbar.Item icon={<Cart />} title='首页' />
         <Tabbar.Item icon={<UserAdd />} title='陪诊师预约' />
-        <Tabbar.Item icon={<Wallet />} title='患者管理' />
         <Tabbar.Item icon={<User />} title='个人中心' />
       </Tabbar>
     </View>

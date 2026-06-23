@@ -273,14 +273,14 @@ function Register() {
   const onFinish = values => {
     Taro.requestSubscribeMessage({
       tmplIds: [
-        'xFXHUxi1wREwX_sHxkWjrhfdvLPSugtfAP5ns4YDj4Q',
-        '23oVo6eA0LXP1VTKrRmztie4LM7mi0m1J-8ZjOf1sXU',
-        '-h75fmq3IWMddNhy2bfP4-Gv4z8eHv5E_aw5K5MeKA0',
+        'your-template-id-booking-success',
+        'your-template-id-chaperon-notify',
+        'your-template-id-service-reminder',
       ],
       success: res => {
         // 检查是否有任何模板被拒绝
         let hasRejected = false;
-        const tmplIds = ['xFXHUxi1wREwX_sHxkWjrhfdvLPSugtfAP5ns4YDj4Q', '23oVo6eA0LXP1VTKrRmztie4LM7mi0m1J-8ZjOf1sXU', '-h75fmq3IWMddNhy2bfP4-Gv4z8eHv5E_aw5K5MeKA0'];
+        const tmplIds = ['your-template-id-booking-success', 'your-template-id-chaperon-notify', 'your-template-id-service-reminder'];
 
         for (const tmplId of tmplIds) {
           // 只检查实际返回的模板状态，未返回的表示之前已经处理过
@@ -293,20 +293,7 @@ function Register() {
           }
         }
 
-        // if (!hasRejected) {
-          // 没有模板被拒绝，可以提交
-          // Toast.show('toast-register', {
-          //   content: '订阅成功',
-          //   icon: 'success',
-          // });
-          submitSucceed(values);
-        // } else {
-        //   // 有模板被拒绝，显示提示
-        //   Toast.show('toast-register', {
-        //     content: '请同意陪诊师消息通知，否则无法报名',
-        //     icon: 'error',
-        //   });
-        // }
+        submitSucceed(values);
       },
       fail: err => {
         // 订阅请求失败，提供重试机会

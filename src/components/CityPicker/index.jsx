@@ -47,21 +47,6 @@ const CityPicker = forwardRef(
       }
     };
 
-    // 获取当前位置城市
-    // const getCurrentCity = async () => {
-    //   try {
-    //     // 获取位置
-    //     await Taro.getLocation({ type: 'wgs84' });
-
-    //     // 简单的逆地理编码 - 这里可以根据需要替换为实际的地理编码服务
-    //     // 为了简化，直接返回null让组件使用默认城市
-    //     return null;
-    //   } catch (error) {
-    //     console.error('获取定位失败:', error);
-    //     return null;
-    //   }
-    // };
-
     // 使用 useRef 来存储 onChange 回调，避免依赖问题
     const onChangeRef = useRef(onChange);
 

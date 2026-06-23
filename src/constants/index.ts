@@ -68,7 +68,7 @@ export const COLORS = {
 export type ColorValue = (typeof COLORS)[keyof typeof COLORS];
 
 // 应用信息
-export const APP_NAME = '壹鹿康行' as const;
+export const APP_NAME = '陪诊服务' as const;
 
 // 分享配置
 export const SHARE_CONFIG = {

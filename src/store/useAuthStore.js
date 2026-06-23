@@ -2,10 +2,8 @@ import Taro from '@tarojs/taro';
 
 import { create } from 'zustand';
 
+import { AUTH_KEYS } from '@/utils/auth';
 import { getCachedImage } from '@/utils/imageUtils';
-
-// 鉴权相关的存储 key
-const AUTH_KEYS = ['token', 'userInfo', 'cached_avatar', 'cached_avatar_timestamp', 'user_avatar', 'user_avatar_timestamp'];
 
 const useAuthStore = create((set, get) => ({
   // 状态

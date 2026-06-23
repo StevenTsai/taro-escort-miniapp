@@ -99,7 +99,7 @@ describe('subscribe', () => {
 
       expect(Taro.requestSubscribeMessage).toHaveBeenCalledWith(
         expect.objectContaining({
-          tmplIds: ['Qv1QlPWH47bjPZo1G2fon-g9wUfNFugYJZomnWRspCk'],
+          tmplIds: ['your-template-id-order-status'],
         })
       );
     });
@@ -125,9 +125,9 @@ describe('subscribe', () => {
       await subscribeCommonMessages();
 
       const ids = Taro.requestSubscribeMessage.mock.calls[0][0].tmplIds;
-      expect(ids).toContain('Qv1QlPWH47bjPZo1G2fon-g9wUfNFugYJZomnWRspCk');
-      expect(ids).toContain('Xz3DQ-r_puOP-5MELrJfOgEYT6Y3kHlHnJYicivmLWA');
-      expect(ids).toContain('xFXHUxi1wREwX_sHxkWjrq5wc6y1pIBOZX2GfyWCd6k');
+      expect(ids).toContain('your-template-id-order-status');
+      expect(ids).toContain('your-template-id-service-complete');
+      expect(ids).toContain('your-template-id-service-reminder');
     });
   });
 

@@ -1,12 +1,13 @@
-# 壹鹿康行 — 医疗陪诊微信小程序
+# 医疗陪诊微信小程序
 
 > 变更记录 (Changelog)
 > - 2026-06-05T00:56:34 — 初始生成：全仓扫描，覆盖 35 个页面、9 个 Store、6 个 Utils、24 个组件
-> - 2026-06-21 — 品牌变更为壹鹿康行；移除课程视频、AI 助手、代金券功能模块
+> - 2026-06-21 — 移除课程视频、AI 助手、代金券功能模块
+> - 2026-06-23 — 开源准备：移除患者病历管理模块、敏感信息清理
 
 ## 项目愿景
 
-"壹鹿康行"是一款面向患者和陪诊师的微信小程序，提供陪诊预约、患者管理等一站式医疗陪诊服务。目标用户为需要陪同就医的患者家属及提供陪诊服务的专业人员。
+一款面向患者和陪诊师的微信小程序，提供陪诊预约等一站式医疗陪诊服务。目标用户为需要陪同就医的患者家属及提供陪诊服务的专业人员。
 
 ## 架构总览
 
@@ -21,7 +22,7 @@
 
 ### 核心技术决策
 
-1. **自定义 TabBar** — 使用 NutUI Tabbar 组件实现自定义底部导航（首页/陪诊师预约/患者管理/个人中心）
+1. **自定义 TabBar** — 使用 NutUI Tabbar 组件实现自定义底部导航（首页/陪诊师预约/个人中心）
 2. **请求层** — 封装统一请求拦截器（自动注入 token、401 处理）、本地缓存管理器（支持 TTL 过期）
 3. **认证流程** — 微信手机号授权登录 + 服务端 session（skey），Zustand 持久化到 Storage
 
@@ -41,9 +42,6 @@ graph TD
     B --> B3["profile / register (个人中心)"];
     B --> B4["medicalChaperons / chaperonList (陪诊师)"];
     B --> B5["serviceDetail / serviceIntroduce (服务)"];
-    B --> B6["patientList / patientDetail / createPatient (患者管理)"];
-    B --> B7["timeline / eventDetail / add* (病程时间线)"];
-    B --> B8["reportGenerate (报告生成)"];
 
     C --> C1["Header / ServiceComponent"];
     C --> C2["Hospital* / MedicalChaperon*"];
@@ -66,7 +64,7 @@ graph TD
 
 | 模块路径 | 职责 | 入口文件 | 测试 |
 |---------|------|---------|------|
-| `src/pages/` | 24 个页面（预约、订单、患者管理等） | `app.config.js` 路由注册 | 无页面级测试 |
+| `src/pages/` | 14 个页面（预约、订单、陪诊师等） | `app.config.js` 路由注册 | 无页面级测试 |
 | `src/store/` | 5 个 Zustand Store（认证/城市/收入） | 各 `use*Store.js` | 2 个测试文件 |
 | `src/utils/` | 工具层：请求封装、认证、支付、权限、图片、订阅 | `request.js` | 4 个测试文件 |
 | `src/components/` | 17 个组件（UI 选择器、业务卡片） | 各 `index.jsx` | 2 个测试文件 |
@@ -109,7 +107,7 @@ npm run test:coverage
 
 ### 云开发
 
-- 环境 ID: `medical-online-8g6dkg7v5cabce79`（硬编码在 `src/app.js`）
+- 环境 ID: 通过 `TARO_APP_CLOUD_ENV` 环境变量配置
 - 在 App 启动时通过 `wx.cloud.init()` 初始化
 
 ## 测试策略
@@ -155,14 +153,11 @@ npm run test:coverage
 |---------|------|---------|
 | `pages/index/index` | 首页（轮播图/服务/医院列表） | 公开 |
 | `pages/medicalChaperons/medicalChaperons` | 陪诊师预约列表 | 公开 |
-| `pages/patientList/patientList` | 患者管理列表 | 需登录 |
 | `pages/profile/profile` | 个人中心（登录入口） | 公开 |
 | `pages/order/order` | 陪诊预约下单 | 需登录 |
 | `pages/orderList/orderList` | 我的订单列表 | 需登录 |
 | `pages/serviceDetail/serviceDetail` | 服务详情 | 公开 |
 | `pages/hospitalDetail/hospitalDetail` | 医院详情 | 公开 |
-| `pages/timeline/timeline` | 患者病程时间线 | 需登录 |
-| `pages/reportGenerate/reportGenerate` | 问诊病历报告生成 | 需登录 |
 | `pages/escortIncome/escortIncome` | 陪诊师收入管理 | 陪诊师 |
 | `pages/chaperonEdit/chaperonEdit` | 陪诊师资料编辑 | 陪诊师 |
 | `pages/register/register` | 陪诊师注册 | 需登录 |

@@ -15,7 +15,7 @@
 | `ORDER_STATUS_LIST` | `Array<{ key, label, value }>` | 订单状态 Tab 筛选列表 |
 | `SERVICE_ID` | `{ BASIC: 1, STANDARD: 2, PREMIUM: 3, ELDER: 4, REMOTE: 5 }` | 服务类型 ID |
 | `COLORS` | `{ PRIMARY, TEXT_PRIMARY, DANGER, ... }` | 主题颜色 |
-| `APP_NAME` | `'壹鹿康行'` | 应用名称 |
+| `APP_NAME` | `'陪诊服务'` | 应用名称 |
 | `SHARE_CONFIG` | `{ title, path }` | 默认分享配置 |
 | `DEFAULT_CITY` | `'北京市'` | 默认城市 |
 | `COS_URLS` | `{ PRIVACY_POLICY, SERVICE_AGREEMENT }` | COS 协议文件地址（从环境变量读取） |

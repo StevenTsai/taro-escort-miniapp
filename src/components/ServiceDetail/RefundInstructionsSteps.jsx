@@ -39,7 +39,7 @@ const RefundInstructionsSteps = () => (
         type='icon'
         icon={<CheckNormal />}
         description='服务开始后不能取消订单, 扣除订单金额100%。如有特殊情况要退款请主动联系客服!
-        客服电话：13311230038 或个人页->点击右下方的“联系客服”。'
+        请个人页->点击右下方的”联系客服”。'
       />
     </Steps>
   </ConfigProvider>

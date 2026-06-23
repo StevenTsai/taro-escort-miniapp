@@ -64,7 +64,7 @@ describe('constants', () => {
 
   describe('APP_NAME', () => {
     it('should be defined', () => {
-      expect(APP_NAME).toBe('壹鹿康行');
+      expect(APP_NAME).toBe('陪诊服务');
     });
   });
 

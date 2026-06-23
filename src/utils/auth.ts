@@ -2,7 +2,7 @@ import Taro from '@tarojs/taro';
 import type { ComponentType } from 'react';
 
 /** 鉴权相关的存储 key */
-const AUTH_KEYS: readonly string[] = [
+export const AUTH_KEYS: readonly string[] = [
   'token',
   'userInfo',
   'cached_avatar',

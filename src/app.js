@@ -11,7 +11,7 @@ import useCityStore from '@/store/useCityStore';
 import '@nutui/nutui-react-taro/dist/styles/themes/default.css';
 import './app.scss';
 
-const CLOUD_ENV_ID = process.env.TARO_APP_CLOUD_ENV || 'medical-online-8g6dkg7v5cabce79';
+const CLOUD_ENV_ID = process.env.TARO_APP_CLOUD_ENV || '';
 
 function App(props) {
   const { initAuth } = useAuthStore();

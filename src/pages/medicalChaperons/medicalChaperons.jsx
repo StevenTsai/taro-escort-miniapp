@@ -10,14 +10,14 @@ function Index() {
 
   Taro.useShareAppMessage(() => {
     return {
-      title: '壹鹿康行 - 陪诊师预约',
+      title: '陪诊师预约',
       path: '/pages/medicalChaperons/medicalChaperons',
     };
   });
 
   Taro.useShareTimeline(() => {
     return {
-      title: '壹鹿康行 - 陪诊师预约',
+      title: '陪诊师预约',
       path: '/pages/medicalChaperons/medicalChaperons',
     };
   });
